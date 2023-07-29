@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
 <html style="font-family: Cairo, sans-serif;">
 
 <head>
@@ -47,7 +50,7 @@
     <link rel="stylesheet" href="~/css/Vertical-Left-SideBar-by-Jigar-Mistry.css">
 
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />*@
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />*@
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
@@ -55,7 +58,7 @@
         <div class="container">
             <a class="navbar-brand" href="index.html" style="font-family: Cairo, sans-serif;">مقالاتي</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse text-center" id="navbarResponsive">
-               <partial name="_LoginPartial" />
+                <partial name="_LoginPartial" />
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about" style="font-family: Cairo, sans-serif;">من نحن؟</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" style="font-family: Cairo, sans-serif;">تواصل معنا</a></li>
@@ -63,13 +66,18 @@
                     <li class="nav-item mx-0 mx-lg-1"></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html" style="font-family: Cairo, sans-serif;">الرئيسة</a></li>
                     <li class="nav-item mx-0 mx-lg-1"></li>
-                </ul><a class="btn btn-primary" role="button" style="font-family: Cairo, sans-serif;" href="Admin.html">لوحة التحكم</a>
+                </ul>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a class="btn btn-primary" role="button" style="font-family: Cairo, sans-serif;" href="/AdminIndex">لوحة التحكم</a>
+
+                }
             </div>
         </div>
     </nav>
 
 
-    <div>
+    <div class="container" style="font-family:Cairo;direction:rtl">
         @RenderBody()
     </div>
 

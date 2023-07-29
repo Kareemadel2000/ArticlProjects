@@ -14,7 +14,13 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddSingleton<IEmailSender, EmailSender>();
+//Add Policy in system
+builder.Services.AddAuthorization(op =>
+{
+    op.AddPolicy("User", p => p.RequireClaim("User", "User"));
+    op.AddPolicy("Admin", p => p.RequireClaim("Admin", "Admin"));
+});
+//builder.Services.AddSingleton<IEmailSender, EmailSender>();
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
