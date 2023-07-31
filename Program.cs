@@ -1,7 +1,8 @@
-using ArticlProjects.Code;
+using ArticlProjects.Core.Entityes;
 using ArticlProjects.Data;
+using ArticlProjects.Data.Interfaces;
+using ArticlProjects.Data.SqlServerContext;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,9 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddSingleton<IDataHelper<Category>, CategoryEntity>(); 
+
+
 //Add Policy in system
 builder.Services.AddAuthorization(op =>
 {
@@ -21,6 +25,7 @@ builder.Services.AddAuthorization(op =>
     op.AddPolicy("Admin", p => p.RequireClaim("Admin", "Admin"));
 });
 //builder.Services.AddSingleton<IEmailSender, EmailSender>();
+builder.Services.AddMvc(op => op.EnableEndpointRouting = false);
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
@@ -39,7 +44,7 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseMvcWithDefaultRoute();
 app.UseRouting();
 
 app.UseAuthentication();

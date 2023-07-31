@@ -57,7 +57,7 @@
         </div>
     </nav>
 
-    <div>
+    <div class="container" style="font-family:Cairo; direction:rtl">
         @RenderBody()
     </div>
     <script src="~/bootstrap/js/bootstrap.min.js"></script>
@@ -74,6 +74,8 @@
     <script src="~/js/Sidebar-Menu.js"></script>
     <script src="~/js/Sidebar-right-opening.js"></script>
     <script src="~/js/theme.js"></script>
+
+    @RenderSection("Scripts", required: false)
 </body>
 
 </html>
