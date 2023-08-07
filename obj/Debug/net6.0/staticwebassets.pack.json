@@ -1,0 +1,537 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ArticlProjects.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ArticlProjects.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Animation-Cards-1.css",
+      "PackagePath": "staticwebassets\\css\\Animation-Cards-1.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Animation-Cards.css",
+      "PackagePath": "staticwebassets\\css\\Animation-Cards.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Article-Cards.css",
+      "PackagePath": "staticwebassets\\css\\Article-Cards.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Article-Clean.css",
+      "PackagePath": "staticwebassets\\css\\Article-Clean.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Article-List.css",
+      "PackagePath": "staticwebassets\\css\\Article-List.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Black-Navbar.css",
+      "PackagePath": "staticwebassets\\css\\Black-Navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Login-Form-Clean.css",
+      "PackagePath": "staticwebassets\\css\\Login-Form-Clean.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Login-Form-Dark.css",
+      "PackagePath": "staticwebassets\\css\\Login-Form-Dark.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Navbar---Apple-1.css",
+      "PackagePath": "staticwebassets\\css\\Navbar---Apple-1.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Navbar---Apple.css",
+      "PackagePath": "staticwebassets\\css\\Navbar---Apple.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Navigation-with-Button.css",
+      "PackagePath": "staticwebassets\\css\\Navigation-with-Button.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Navigation-with-Search.css",
+      "PackagePath": "staticwebassets\\css\\Navigation-with-Search.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\News-Cards.css",
+      "PackagePath": "staticwebassets\\css\\News-Cards.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Off-Canvas-Sidebar-Drawer-Navbar.css",
+      "PackagePath": "staticwebassets\\css\\Off-Canvas-Sidebar-Drawer-Navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Responsive-UI-Card-02.css",
+      "PackagePath": "staticwebassets\\css\\Responsive-UI-Card-02.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Right-Sidebar.css",
+      "PackagePath": "staticwebassets\\css\\Right-Sidebar.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\SIdebar-Responsive-2-1.css",
+      "PackagePath": "staticwebassets\\css\\SIdebar-Responsive-2-1.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\SIdebar-Responsive-2.css",
+      "PackagePath": "staticwebassets\\css\\SIdebar-Responsive-2.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Sidebar-Menu-1.css",
+      "PackagePath": "staticwebassets\\css\\Sidebar-Menu-1.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Sidebar-Menu.css",
+      "PackagePath": "staticwebassets\\css\\Sidebar-Menu.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Sidebar-right-opening.css",
+      "PackagePath": "staticwebassets\\css\\Sidebar-right-opening.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Social-Icons.css",
+      "PackagePath": "staticwebassets\\css\\Social-Icons.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Soft-UI-Aside-Navbar.css",
+      "PackagePath": "staticwebassets\\css\\Soft-UI-Aside-Navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Studious-sidebar.css",
+      "PackagePath": "staticwebassets\\css\\Studious-sidebar.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Team-Boxed.css",
+      "PackagePath": "staticwebassets\\css\\Team-Boxed.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\Vertical-Left-SideBar-by-Jigar-Mistry.css",
+      "PackagePath": "staticwebassets\\css\\Vertical-Left-SideBar-by-Jigar-Mistry.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\dh-card-image-left-dark.css",
+      "PackagePath": "staticwebassets\\css\\dh-card-image-left-dark.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\dh-navbar-inverse.css",
+      "PackagePath": "staticwebassets\\css\\dh-navbar-inverse.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\fonts\\ionicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\fonts\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\fonts\\ionicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\Screenshot 2021-08-18 014017.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot 2021-08-18 014017.png"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\beach.jpg",
+      "PackagePath": "staticwebassets\\img\\beach.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\building.jpg",
+      "PackagePath": "staticwebassets\\img\\building.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\desk.jpg",
+      "PackagePath": "staticwebassets\\img\\desk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\expansion.png",
+      "PackagePath": "staticwebassets\\img\\expansion.png"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\loft.jpg",
+      "PackagePath": "staticwebassets\\img\\loft.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\logo-ct.png",
+      "PackagePath": "staticwebassets\\img\\logo-ct.png"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\paleta-sensores.jpg",
+      "PackagePath": "staticwebassets\\img\\paleta-sensores.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\portfolio\\cabin.png",
+      "PackagePath": "staticwebassets\\img\\portfolio\\cabin.png"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\product-aeon-feature.jpg",
+      "PackagePath": "staticwebassets\\img\\product-aeon-feature.jpg"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\profile.png",
+      "PackagePath": "staticwebassets\\img\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\Navbar---Apple.js",
+      "PackagePath": "staticwebassets\\js\\Navbar---Apple.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\Off-Canvas-Sidebar-Drawer-Navbar-1.js",
+      "PackagePath": "staticwebassets\\js\\Off-Canvas-Sidebar-Drawer-Navbar-1.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\Off-Canvas-Sidebar-Drawer-Navbar.js",
+      "PackagePath": "staticwebassets\\js\\Off-Canvas-Sidebar-Drawer-Navbar.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\Right-Sidebar.js",
+      "PackagePath": "staticwebassets\\js\\Right-Sidebar.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\Sidebar-Menu.js",
+      "PackagePath": "staticwebassets\\js\\Sidebar-Menu.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\Sidebar-right-opening.js",
+      "PackagePath": "staticwebassets\\js\\Sidebar-right-opening.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\Studious-sidebar.js",
+      "PackagePath": "staticwebassets\\js\\Studious-sidebar.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\bs-init-1.js",
+      "PackagePath": "staticwebassets\\js\\bs-init-1.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\bs-init.js",
+      "PackagePath": "staticwebassets\\js\\bs-init.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\chart.min.js",
+      "PackagePath": "staticwebassets\\js\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\freelancer.js",
+      "PackagePath": "staticwebassets\\js\\freelancer.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\js\\theme.js",
+      "PackagePath": "staticwebassets\\js\\theme.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ArticlProjects.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ArticlProjects.props",
+      "PackagePath": "build\\ArticlProjects.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ArticlProjects.props",
+      "PackagePath": "buildMultiTargeting\\ArticlProjects.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ArticlProjects.props",
+      "PackagePath": "buildTransitive\\ArticlProjects.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
