@@ -8,18 +8,42 @@ namespace ArticlProjects.Controllers
     public class CategorysController : Controller
     {
         private readonly IDataHelper<Category> _dataHelper;
+        private int PageItem;
 
         public CategorysController(IDataHelper<Category> dataHelper)
         {
             _dataHelper = dataHelper;
+            PageItem = 10;
         }
 
        
         // GET: CategorysController
-        public ActionResult Index()
+        public ActionResult Index(int? id)
         {
-            return View(_dataHelper.GetAll());
+            if (id == 0|| id ==null)
+            {
+                return View(_dataHelper.GetAll().Take(PageItem));
+            }
+            else
+            {
+                var data = _dataHelper.GetAll().Where(x=>x.Id > id).Take(PageItem);
+                return View(data);
+            }
         }
+
+        // GET: CategorysController
+        public ActionResult Search(string SearchItem)
+        {
+            if (SearchItem == null)
+            {
+                return View("Index", _dataHelper.GetAll());
+            }
+            else
+            {
+                return View("Index", _dataHelper.Search(SearchItem));
+            }
+        }
+       
 
         // GET: CategorysController/Create
         public ActionResult Create()

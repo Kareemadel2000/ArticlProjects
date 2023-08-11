@@ -6,7 +6,11 @@
 }
 
 <h1 style="font-family:Cairo">بيانات الناشرون</h1>
-
+<br />
+<form method="get" asp-action="Search">
+    <input type="search" name="SearchItem" class="search-field" />
+    <input type="submit" value="بحث" class="btn btn-primary" />
+</form>
 <table class="table table-striped hover">
     <thead>
         <tr>
@@ -73,3 +77,19 @@
         }
     </tbody>
 </table>
+
+
+@{
+    if (Model.ToList().Count < 10)
+    {
+        int id = 0;
+        <a class="btn btn-primary" asp-action="Index" asp-route-id="@id">الصفحة الاولى </a>
+
+    }
+    else
+    {
+        <a class="btn btn-primary" asp-action="Index" asp-route-id="@Model.ToList().Last().Id">التالى </a>
+
+
+    }
+}

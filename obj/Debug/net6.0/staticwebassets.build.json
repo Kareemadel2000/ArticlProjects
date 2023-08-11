@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ca8ToFT6zdPvCxTwZZnXWsUCC4MEHHaTBORqw8cl368=",
+  "Hash": "Lyf/2oebnAkELyW6GMj3mLdtdun8LpcIO3Hok1kFGIA=",
   "Source": "ArticlProjects",
   "BasePath": "_content/ArticlProjects",
   "Mode": "Default",
@@ -1817,6 +1817,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\ionicons.woff"
+    },
+    {
+      "Identity": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\images\\4fe49644-843a-445f-b660-f671e0068ab4-WhatsApp Image 2023-07-09 at 07.13.39.jpg",
+      "SourceId": "ArticlProjects",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\",
+      "BasePath": "_content/ArticlProjects",
+      "RelativePath": "images/4fe49644-843a-445f-b660-f671e0068ab4-WhatsApp Image 2023-07-09 at 07.13.39.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4fe49644-843a-445f-b660-f671e0068ab4-WhatsApp Image 2023-07-09 at 07.13.39.jpg"
     },
     {
       "Identity": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\img\\1.jpg",

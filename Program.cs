@@ -15,8 +15,10 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+// Inject Table
 builder.Services.AddSingleton<IDataHelper<Category>, CategoryEntity>(); 
 builder.Services.AddSingleton<IDataHelper<Author>, AuthorEntity>(); 
+builder.Services.AddSingleton<IDataHelper<AuthorPost>, AuthorPostEntity>(); 
 
 
 //Add Policy in system
