@@ -1,29 +1,18 @@
 ﻿@model ArticlProjects.Core.Entityes.AuthorPost
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "حذف";
     Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1 style="font-family:Cairo">التفاصيل </h1>
-
+<h1 style="font-family:Cairo"> حذف</h1>
+<h4 style="font-family:Cairo">هل انت متاكد من هذا الاجراء؟ </h4>
 <div>
-    <h4 style="font-family:Cairo">تفاصيل المشاركة</h4>
+    <h4 style="font-family:Cairo">بيانات المشاركة</h4>
     <hr />
     <dl class="row">
 
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.UserName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.UserName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.FullName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.FullName)
-        </dd>
+
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.PostCategory)
         </dt>
@@ -56,8 +45,11 @@
         </dd>
 
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model.Id">تعديل</a> |
-    <a asp-action="Index" class="btn btn-primary">الرجوع الى المشاركات</a>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="حذف" class="btn btn-primary" /> |
+        <a asp-action="Index"  class="btn btn-primary" >الرجوع الى المشاركات</a>
+    </form>
+
 </div>

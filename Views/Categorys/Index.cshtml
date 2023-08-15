@@ -50,12 +50,12 @@
     if (Model.ToList().Count < 10)
     {
         int id = 0;
-        <a class="btn btn-primary" asp-action="Index" asp-route-id="@id">الصفحة الاولى </a>
+        <a class="btn btn-primary" asp-action="Index" asp-route-id="@id">الصفحة الاولى </a>;
 
     }
     else
     {
-        <a class="btn btn-primary" asp-action="Index" asp-route-id="@Model.ToList().Last().Id">التالى </a>
+        <a class="btn btn-primary" asp-action="Index" asp-route-id="@Model.ToList().Last().Id">التالى </a>;
 
 
     }

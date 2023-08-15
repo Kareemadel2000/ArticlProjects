@@ -1,22 +1,33 @@
 ﻿@model ArticlProjects.CoreView.AuthorPostView
 @inject ArticlProjects.Data.Interfaces.IDataHelper<ArticlProjects.Core.Entityes.Category> datahelper
+
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
     Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1 style="font-family:Cairo">أنشاء</h1>
+<h1 style="font-family:Cairo">تعديل</h1>
 
-<h4 style="font-family:Cairo">معلومات المشاركة</h4>
+<h4 style="font-family:Cairo">بيانات المشاركة</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-          
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <input asp-for="UserId" type="hidden" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input asp-for="UserName" type="hidden" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input asp-for="FullName" type="hidden" class="form-control" />
+            </div>
             <div class="form-group">
                 <label asp-for="PostCategory" class="control-label"></label>
-                <select asp-for="PostCategory" class="form-control" asp-items="new SelectList(datahelper.GetAll().Select(x=>x.Name))" ></select>
+                <input asp-for="PostCategory" class="form-control" />
                 <span asp-validation-for="PostCategory" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -31,13 +42,21 @@
             </div>
             <div class="form-group">
                 <label asp-for="PostImageUrl" class="control-label"></label>
-                <input asp-for="PostImageUrl" type="file" class="form-control" />
+                <select asp-for="PostCategory" asp-items="new SelectList(datahelper.GetAll().Select(x=>x.Name))" class="form-control"></select>/>
                 <span asp-validation-for="PostImageUrl" class="text-danger"></span>
             </div>
-           
+            <div class="form-group">
+                <input asp-for="AddedDate" type="hidden" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input asp-for="AuthorId" type="hidden" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input asp-for="CategoryId" type="hidden" class="form-control" />
+            </div>
             <br />
             <div class="form-group">
-                <input type="submit" value="أنشاء" class="btn btn-primary" />
+                <input type="submit" value="حفظ" class="btn btn-primary" />
                 <a asp-action="Index" class="btn btn-primary">الرجوع الى المشاركات</a>
 
             </div>

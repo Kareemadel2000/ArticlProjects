@@ -2,6 +2,7 @@ using ArticlProjects.Core.Entityes;
 using ArticlProjects.Data;
 using ArticlProjects.Data.Interfaces;
 using ArticlProjects.Data.SqlServerContext;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,20 +16,23 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
-// Inject Table
-builder.Services.AddSingleton<IDataHelper<Category>, CategoryEntity>(); 
-builder.Services.AddSingleton<IDataHelper<Author>, AuthorEntity>(); 
-builder.Services.AddSingleton<IDataHelper<AuthorPost>, AuthorPostEntity>(); 
-
-
 //Add Policy in system
 builder.Services.AddAuthorization(op =>
 {
     op.AddPolicy("User", p => p.RequireClaim("User", "User"));
     op.AddPolicy("Admin", p => p.RequireClaim("Admin", "Admin"));
 });
+
+// Inject Table
+builder.Services.AddSingleton<IDataHelper<Category>, CategoryEntity>();
+builder.Services.AddSingleton<IDataHelper<Author>, AuthorEntity>();
+builder.Services.AddSingleton<IDataHelper<AuthorPost>, AuthorPostEntity>();
+
+
+
 //builder.Services.AddSingleton<IEmailSender, EmailSender>();
-builder.Services.AddMvc(op => op.EnableEndpointRouting = false);
+builder.Services.AddControllersWithViews();
+//builder.Services.AddMvc(op=>op.EnableEndpointRouting=false);
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
@@ -47,12 +51,21 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseMvcWithDefaultRoute();
 app.UseRouting();
 
+
+//app.UseMvcWithDefaultRoute();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages();
+
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+    endpoints.MapRazorPages();
+});
 
 app.Run();

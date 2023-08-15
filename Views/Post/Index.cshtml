@@ -1,11 +1,11 @@
-﻿@model IEnumerable<ArticlProjects.Core.Entityes.AuthorPost>
+﻿ @model IEnumerable<ArticlProjects.Core.Entityes.AuthorPost>
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1 style="font-family:Cairo">بيانت المشاركات </h1>
+<h1 style="font-family:Cairo">بيانات المشاركات </h1>
 
 <p style="font-family:Cairo">
     <a asp-action="Create">مشاركة جديدة</a>
@@ -77,12 +77,12 @@
     if (Model.ToList().Count < 10)
     {
         int id = 0;
-        <a class="btn btn-primary" asp-action="Index" asp-route-id="@id">الصفحة الاولى </a>
+        <a asp-action="Index" asp-route-id="@id">الصفحة الاولى </a>;
 
     }
     else
     {
-        <a class="btn btn-primary" asp-action="Index" asp-route-id="@Model.ToList().Last().Id">التالى </a>
+        <a asp-action="Index" asp-route-id="@Model.ToList().Last().Id">التالى </a>;
 
 
     }
