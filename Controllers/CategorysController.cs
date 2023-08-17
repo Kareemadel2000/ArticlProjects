@@ -1,10 +1,12 @@
 ﻿using ArticlProjects.Core.Entityes;
 using ArticlProjects.Data.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArticlProjects.Controllers
 {
+    [Authorize("Admin")]
     public class CategorysController : Controller
     {
         private readonly IDataHelper<Category> _dataHelper;

@@ -1,4 +1,4 @@
-﻿ @model IEnumerable<ArticlProjects.Core.Entityes.AuthorPost>
+﻿@model IEnumerable<ArticlProjects.Core.Entityes.AuthorPost>
 
 @{
     ViewData["Title"] = "Index";
@@ -10,6 +10,12 @@
 <p style="font-family:Cairo">
     <a asp-action="Create">مشاركة جديدة</a>
 </p>
+<br />
+<form method="get" asp-action="Search">
+    <input type="search" name="SearchItem" class="search-field" />
+    <input type="submit" value="بحث" class="btn btn-primary" />
+</form>
+<br />
 <table class="table table-striped hover ">
     <thead>
         <tr>

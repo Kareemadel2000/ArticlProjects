@@ -2,6 +2,8 @@
 using ArticlProjects.Core.Entityes;
 using ArticlProjects.CoreView;
 using ArticlProjects.Data.Interfaces;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,19 +12,25 @@ namespace ArticlProjects.Controllers
     public class AuthorController : Controller
     {
         private readonly IDataHelper<Author> _dataHelper;
+        private readonly IAuthorizationService _authorizationService;
         private readonly IWebHostEnvironment _webHost;
         private readonly FilesHelper _filesHelper;
         private int PageItem;
 
-        public AuthorController(IDataHelper<Author> dataHelper,IWebHostEnvironment webHost)
+        public AuthorController(
+            IDataHelper<Author> dataHelper,
+            IAuthorizationService authorizationService,
+            IWebHostEnvironment webHost)
         {
             _dataHelper = dataHelper;
+            _authorizationService = authorizationService;
             _webHost = webHost;
             _filesHelper = new FilesHelper(_webHost);
             PageItem = 10;
         }
 
         // GET: AuthorController
+        [Authorize("Admin")]
         public ActionResult Index(int? id)
         {
             if (id == 0 || id == null)
@@ -37,6 +45,7 @@ namespace ArticlProjects.Controllers
         }
         #region search
         // GET: AuthorController
+        [Authorize("Admin")]
         public ActionResult Search(string SearchItem)
         {
             if (SearchItem == null)
@@ -47,12 +56,13 @@ namespace ArticlProjects.Controllers
             {
                 return View("Index", _dataHelper.Search(SearchItem));
             }
-        } 
+        }
         #endregion
 
         #region Edit
 
         // GET: AuthorController/Edit/5
+        [Authorize]
         public ActionResult Edit(int id)
         {
             var author = _dataHelper.Find(id);
@@ -72,6 +82,7 @@ namespace ArticlProjects.Controllers
 
         // POST: AuthorController/Edit/5
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, AuthorView collection)
         {
@@ -83,14 +94,24 @@ namespace ArticlProjects.Controllers
                     UserId = collection.UserId,
                     Facebook = collection.Facebook,
                     FullName = collection.FullName,
-                    Bio=collection.Bio,
-                    Instagram=collection.Instagram,
+                    Bio = collection.Bio,
+                    Instagram = collection.Instagram,
                     UserName = collection.UserName,
-                    Twitter =collection.Twitter,
-                    ProfileImageUrl= _filesHelper.UploadFile(collection.ProfileImageUrl, "images"),
+                    Twitter = collection.Twitter,
+                    ProfileImageUrl = _filesHelper.UploadFile(collection.ProfileImageUrl, "images"),
                 };
-                _dataHelper.Update(id,author);
-                return RedirectToAction(nameof(Index));
+                _dataHelper.Update(id, author);
+
+                var result = _authorizationService.AuthorizeAsync(User, "Admin");
+                if (result.Result.Succeeded)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    return Redirect("/AdminIndex");
+                }
+
             }
             catch
             {
@@ -102,6 +123,7 @@ namespace ArticlProjects.Controllers
 
         #region Delete
         // GET: AuthorController/Delete/5
+        [Authorize("Admin")]
         public ActionResult Delete(int id)
         {
             var author = _dataHelper.Find(id);
@@ -121,6 +143,7 @@ namespace ArticlProjects.Controllers
 
         // POST: AuthorController/Delete/5
         [HttpPost]
+        [Authorize("Admin")]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, Author collection)
         {
@@ -138,7 +161,7 @@ namespace ArticlProjects.Controllers
             {
                 return View();
             }
-        } 
+        }
         #endregion
     }
 }

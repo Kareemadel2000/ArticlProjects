@@ -82,6 +82,37 @@ namespace ArticlProjects.Controllers
         }
         #endregion
 
+        #region search
+        // GET: AuthorController
+        public ActionResult Search(string SearchItem)
+        {
+            SetUser();
+            if (result.Result.Succeeded)
+            {
+                if (SearchItem == null)
+                {
+                    return View("Index", _dataHelper.GetAll());
+                }
+                else
+                {
+                    return View("Index", _dataHelper.Search(SearchItem));
+                }
+            }
+            else
+            {
+                if (SearchItem == null)
+                {
+                    return View("Index", _dataHelper.GetDataByUserId(UserId));
+                }
+                else
+                {
+                    return View("Index", _dataHelper.Search(SearchItem).Where(x=>x.UserId==UserId).ToList());
+                }
+            }
+           
+        }
+        #endregion
+
         #region Details
         // GET: PostController/Details/5
         public ActionResult Details(int id)
