@@ -29,6 +29,7 @@ namespace ArticlProjects.Controllers
             PageItem = 10;
         }
 
+        #region Indexs
         // GET: AuthorController
         [Authorize("Admin")]
         public ActionResult Index(int? id)
@@ -42,7 +43,9 @@ namespace ArticlProjects.Controllers
                 var data = _dataHelper.GetAll().Where(x => x.Id > id).Take(PageItem);
                 return View(data);
             }
-        }
+        } 
+        #endregion
+
         #region search
         // GET: AuthorController
         [Authorize("Admin")]
@@ -76,7 +79,7 @@ namespace ArticlProjects.Controllers
                 Instagram = author.Instagram,
                 UserName = author.UserName,
                 Twitter = author.Twitter,
-                
+
             };
             return View(authorView);
         }

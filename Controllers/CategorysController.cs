@@ -18,21 +18,24 @@ namespace ArticlProjects.Controllers
             PageItem = 10;
         }
 
-       
+
+        #region Index
         // GET: CategorysController
         public ActionResult Index(int? id)
         {
-            if (id == 0|| id ==null)
+            if (id == 0 || id == null)
             {
                 return View(_dataHelper.GetAll().Take(PageItem));
             }
             else
             {
-                var data = _dataHelper.GetAll().Where(x=>x.Id > id).Take(PageItem);
+                var data = _dataHelper.GetAll().Where(x => x.Id > id).Take(PageItem);
                 return View(data);
             }
         }
+        #endregion
 
+        #region search
         // GET: CategorysController
         public ActionResult Search(string SearchItem)
         {
@@ -45,8 +48,10 @@ namespace ArticlProjects.Controllers
                 return View("Index", _dataHelper.Search(SearchItem));
             }
         }
-       
+        #endregion
 
+
+        #region create
         // GET: CategorysController/Create
         public ActionResult Create()
         {
@@ -60,8 +65,8 @@ namespace ArticlProjects.Controllers
         {
             try
             {
-               var result= _dataHelper.Add(collection);
-                if (result==1)
+                var result = _dataHelper.Add(collection);
+                if (result == 1)
                 {
                     return RedirectToAction(nameof(Index));
                 }
@@ -73,6 +78,9 @@ namespace ArticlProjects.Controllers
             }
         }
 
+        #endregion
+
+        #region Edit
         // GET: CategorysController/Edit/5
         public ActionResult Edit(int id)
         {
@@ -86,7 +94,7 @@ namespace ArticlProjects.Controllers
         {
             try
             {
-                var result = _dataHelper.Update(id,collection);
+                var result = _dataHelper.Update(id, collection);
                 if (result == 1)
                 {
                     return RedirectToAction(nameof(Index));
@@ -98,7 +106,9 @@ namespace ArticlProjects.Controllers
                 return View();
             }
         }
+        #endregion
 
+        #region Delete
         // GET: CategorysController/Delete/5
         public ActionResult Delete(int id)
         {
@@ -124,6 +134,7 @@ namespace ArticlProjects.Controllers
             {
                 return View();
             }
-        }
+        } 
+        #endregion
     }
 }
