@@ -80,7 +80,7 @@
                         <div class="card" style="margin: 10;">
                             <img class="card-img-top w-100 d-block" src="~/images/@item.PostImageUrl">
                             <div class="card-body">
-                                <h4 class="text-center card-title" style="font-family: Cairo, sans-serif;"> @item.PostTitle</h4><a class="btn btn-primary float-end" role="button" style="font-family: Cairo, sans-serif;width: 149.875px;" href="/Article">قراءة</a>
+                                <h4 class="text-center card-title" style="font-family: Cairo, sans-serif;"> @item.PostTitle</h4><a class="btn btn-primary float-end" role="button" style="font-family: Cairo, sans-serif;width: 149.875px;" asp-page="/Article" asp-route-id="@item.Id">قراءة</a>
                             </div>
                         </div>
                     </div>
@@ -91,13 +91,30 @@
     </div>
     <nav class="text-center float-end" style="font-family: Lato, sans-serif;border-color: var(--bs-red);margin: 10px;">
         <ul class="pagination">
-            <li class="page-item text-center" style="text-align: center;"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-            <li class="page-item text-center" style="text-align: center;"><a class="page-link" href="#">1</a></li>
-            <li class="page-item text-center" style="text-align: center;"><a class="page-link" href="#">2</a></li>
-            <li class="page-item text-center" style="text-align: center;"><a class="page-link" href="#">3</a></li>
-            <li class="page-item text-center" style="text-align: center;"><a class="page-link" href="#">4</a></li>
-            <li class="page-item text-center" style="text-align: center;"><a class="page-link" href="#">5</a></li>
-            <li class="page-item text-center" style="text-align: center;"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+            @{
+                <form method="get" class="m-2">
+                    <input type="hidden" value="All" name="LoadState" />
+                    <input type="submit" class="form-control bg-danger" value="الصفة الاولى" />
+                </form>
+
+                if (Model.ListOfPost.Count > 0)
+                {
+                    <form method="get" class="m-2">
+                        <input type="hidden" value="Prev" name="LoadState" />
+                        <input type="hidden" value="@Model.ListOfPost.First().Id" name="id" />
+                        <input type="submit" class="form-control bg-danger" value="السابق" />
+                    </form>
+                }
+                if (Model.ListOfPost.Count == Model.NoOfItem)
+                {
+                    <form method="get" class="m-2">
+                        <input type="hidden" value="Next" name="LoadState" />
+                        <input type="hidden" value="@Model.ListOfPost.Last().Id" name="id" />
+                        <input type="submit" class="form-control bg-info" value="التالى" />
+                    </form>
+                }
+            }
+
         </ul>
     </nav>
 </section>

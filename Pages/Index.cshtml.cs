@@ -10,7 +10,7 @@ namespace ArticlProjects.Pages
         private readonly ILogger<IndexModel> _logger;
         private readonly IDataHelper<Category> _dataHelperforCategory;
         private readonly IDataHelper<AuthorPost> _dataHelperForAuthorPost;
-        private readonly int NoOfItem;
+        public readonly int NoOfItem;
 
         public IndexModel(
             ILogger<IndexModel> logger,
@@ -28,7 +28,7 @@ namespace ArticlProjects.Pages
 
         public List<Category> ListOfCategory { get; set; }
         public List<AuthorPost> ListOfPost { get; set; }
-        public void OnGet(string LoadState, string CategoryName, string search)
+        public void OnGet(string LoadState, string CategoryName, string search , int id)
         {
             GetAllCategory();
             if (LoadState == null || LoadState == "All")
@@ -42,6 +42,13 @@ namespace ArticlProjects.Pages
             else if (LoadState == "Search")
             {
                 SearchData(search);
+            }
+            else if (LoadState == "Next")
+            {
+                GetNaxtData(id);
+            }else if (LoadState == "Prev")
+            {
+                GetNaxtData(id - NoOfItem);
             }
 
         }
@@ -61,6 +68,11 @@ namespace ArticlProjects.Pages
         private void SearchData(string SearchItem)
         {
             ListOfPost = _dataHelperForAuthorPost.Search(SearchItem);
+        }
+
+        private void GetNaxtData(int id)
+        {
+            ListOfPost = _dataHelperForAuthorPost.GetAll().Where(x=>x.Id >id).Take(NoOfItem).ToList();
         }
     }
 }
