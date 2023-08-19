@@ -4,8 +4,8 @@
 @inject ArticlProjects.Data.Interfaces.IDataHelper<ArticlProjects.Core.Entityes.Author> datahelper
 @{
     var userid = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-    int id = datahelper.GetAll().Where(x => x.UserId == userid).Select(x => x.Id).First();
-    var result = AuthorizationService.AuthorizeAsync(User, "Admin");
+    int id = datahelper.GetAll().Where(x => x.UserId == userid).Select(x => x.Id).FirstOrDefault();
+    var result = AuthorizationService.AuthorizeAsync(User ,"Admin");
 
 }
 <!DOCTYPE html>

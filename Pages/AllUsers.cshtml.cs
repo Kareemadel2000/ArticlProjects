@@ -7,38 +7,28 @@ namespace ArticlProjects.Pages
 {
     public class AllUsersModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-        private readonly IDataHelper<Category> _dataHelperforCategory;
-        private readonly IDataHelper<AuthorPost> _dataHelperForAuthorPost;
-        public readonly int NoOfItem;
+
+
        
-        public AllUsersModel(
-            ILogger<IndexModel> logger,
-            IDataHelper<Category> dataHelperforCategory,
-            IDataHelper<AuthorPost> dataHelperForAuthorPost
-            )
+        public readonly int NoOfItem;
+        private readonly IDataHelper<Core.Entityes.Author> _dataHelper;
+
+        public AllUsersModel(IDataHelper<Core.Entityes.Author> dataHelper)
         {
-            _logger = logger;
-            _dataHelperforCategory = dataHelperforCategory;
-            _dataHelperForAuthorPost = dataHelperForAuthorPost;
+            _dataHelper = dataHelper;
             NoOfItem = 6;
-            ListOfCategory = new List<Category>();
-            ListOfPost = new List<AuthorPost>();
+            ListOfAuthor = new List<Core.Entityes.Author>();
         }
 
-        public List<Category> ListOfCategory { get; set; }
-        public List<AuthorPost> ListOfPost { get; set; }
-        public void OnGet(string LoadState, string CategoryName, string search, int id)
+        public List<Core.Entityes.Author> ListOfAuthor { get; set; }
+        public void OnGet(string LoadState,string search, int id)
         {
-            GetAllCategory();
+           
             if (LoadState == null || LoadState == "All")
             {
-                GetAllPost();
+                GetAllAuthor();
             }
-            else if (LoadState == "ByCategory")
-            {
-                GetDataByCategoryName(CategoryName);
-            }
+            
             else if (LoadState == "Search")
             {
                 SearchData(search);
@@ -54,26 +44,18 @@ namespace ArticlProjects.Pages
 
         }
 
-        private void GetAllCategory()
+        private void GetAllAuthor()
         {
-            ListOfCategory = _dataHelperforCategory.GetAll();
-        }
-        private void GetAllPost()
-        {
-            ListOfPost = _dataHelperForAuthorPost.GetAll().Take(NoOfItem).ToList();
-        }
-        private void GetDataByCategoryName(string CategoryName)
-        {
-            ListOfPost = _dataHelperForAuthorPost.GetAll().Where(x => x.PostCategory == CategoryName).Take(NoOfItem).ToList();
+            ListOfAuthor = _dataHelper.GetAll().Take(NoOfItem).ToList();
         }
         private void SearchData(string SearchItem)
         {
-            ListOfPost = _dataHelperForAuthorPost.Search(SearchItem);
+            ListOfAuthor = _dataHelper.Search(SearchItem);
         }
 
         private void GetNaxtData(int id)
         {
-            ListOfPost = _dataHelperForAuthorPost.GetAll().Where(x => x.Id > id).Take(NoOfItem).ToList();
+            ListOfAuthor = _dataHelper.GetAll().Where(x => x.Id > id).Take(NoOfItem).ToList();
         }
     }
 }

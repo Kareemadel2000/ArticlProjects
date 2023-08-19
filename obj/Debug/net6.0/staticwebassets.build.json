@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B3hiBhB7AQbKYqCP1zU5/O6WepDgBXfwWSTqbyR8o2U=",
+  "Hash": "HApWu3S2pWMoUoMhUIYwbYjDJ6O4gwLQJwe2gUJPh5k=",
   "Source": "ArticlProjects",
   "BasePath": "_content/ArticlProjects",
   "Mode": "Default",
@@ -1853,6 +1853,23 @@
       "OriginalItemSpec": "wwwroot\\images\\07d11607-fb51-47d5-9de3-fb03f9050961-images (2).jpeg"
     },
     {
+      "Identity": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\images\\13bfdfe9-5fd5-46cf-95c7-62f2082e6594-_2e5cbe64-c8bf-4cac-abd5-7b9c101bc22d.jpeg",
+      "SourceId": "ArticlProjects",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\",
+      "BasePath": "_content/ArticlProjects",
+      "RelativePath": "images/13bfdfe9-5fd5-46cf-95c7-62f2082e6594-_2e5cbe64-c8bf-4cac-abd5-7b9c101bc22d.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\13bfdfe9-5fd5-46cf-95c7-62f2082e6594-_2e5cbe64-c8bf-4cac-abd5-7b9c101bc22d.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\images\\1f07b31d-b6ee-4dec-8b64-c64e4721969f-شرح.jpg",
       "SourceId": "ArticlProjects",
       "SourceType": "Discovered",
@@ -2208,6 +2225,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\a8fb352c-06ec-4d60-983b-72a4d383343c-images (6).jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\images\\b949772c-bc62-4344-a840-808203bd0e70-WhatsApp Image 2023-07-09 at 07.13.39.jpg",
+      "SourceId": "ArticlProjects",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\",
+      "BasePath": "_content/ArticlProjects",
+      "RelativePath": "images/b949772c-bc62-4344-a840-808203bd0e70-WhatsApp Image 2023-07-09 at 07.13.39.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b949772c-bc62-4344-a840-808203bd0e70-WhatsApp Image 2023-07-09 at 07.13.39.jpg"
     },
     {
       "Identity": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\images\\b9d579ed-8fa9-4a34-bd32-2107754c1537-WhatsApp Image 2020-05-30 at 2.13.21 AM (1).jpeg",

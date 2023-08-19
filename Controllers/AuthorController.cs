@@ -76,6 +76,7 @@ namespace ArticlProjects.Controllers
                 Instagram = author.Instagram,
                 UserName = author.UserName,
                 Twitter = author.Twitter,
+                
             };
             return View(authorView);
         }

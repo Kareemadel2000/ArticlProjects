@@ -94,7 +94,7 @@
             @{
                 <form method="get" class="m-2">
                     <input type="hidden" value="All" name="LoadState" />
-                    <input type="submit" class="form-control bg-danger" value="الصفة الاولى" />
+                    <input type="submit" class="form-control bg-success btn btn-success " value="الصفحة الاولى" />
                 </form>
 
                 if (Model.ListOfPost.Count > 0)
@@ -102,7 +102,7 @@
                     <form method="get" class="m-2">
                         <input type="hidden" value="Prev" name="LoadState" />
                         <input type="hidden" value="@Model.ListOfPost.First().Id" name="id" />
-                        <input type="submit" class="form-control bg-danger" value="السابق" />
+                        <input type="submit" class="form-control btn btn-primary" value="السابق" />
                     </form>
                 }
                 if (Model.ListOfPost.Count == Model.NoOfItem)
@@ -110,7 +110,7 @@
                     <form method="get" class="m-2">
                         <input type="hidden" value="Next" name="LoadState" />
                         <input type="hidden" value="@Model.ListOfPost.Last().Id" name="id" />
-                        <input type="submit" class="form-control bg-info" value="التالى" />
+                        <input type="submit" class="form-control btn btn-primary" value="التالى" />
                     </form>
                 }
             }
