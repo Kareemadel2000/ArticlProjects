@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration.UserSecrets;
 
 namespace ArticlProjects.Controllers
 {
@@ -72,14 +73,14 @@ namespace ArticlProjects.Controllers
             AuthorView authorView = new AuthorView
             {
                 Id = author.Id,
-                UserId = author.UserId,
+                Bio = author.Bio,
                 Facebook = author.Facebook,
                 FullName = author.FullName,
-                Bio = author.Bio,
                 Instagram = author.Instagram,
-                UserName = author.UserName,
                 Twitter = author.Twitter,
-
+                UserId = author.UserId,
+                UserName = author.UserName,
+                //ProfileImageUrl = _filesHelper.UploadFile(author.ProfileImageUrl, "images")
             };
             return View(authorView);
         }

@@ -62,13 +62,17 @@
     </div>
 </div>
 
-@if (result.Result.Succeeded)
-{
-    <div>
-        <a asp-action="Index">الرجوع الى المستخدمين</a>
+@{
+    if (result.Result.Succeeded)
+    {
+        <div>
+            <a asp-action="Index">الرجوع الى المستخدمين</a>
 
-    </div>
+        </div>
+    }
 }
+
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
