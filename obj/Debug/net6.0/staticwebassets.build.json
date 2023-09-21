@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HApWu3S2pWMoUoMhUIYwbYjDJ6O4gwLQJwe2gUJPh5k=",
+  "Hash": "wey5/RJJUrgMZgSzzSrVe2ZeXfgDV8H0BSCTiu0sIJU=",
   "Source": "ArticlProjects",
   "BasePath": "_content/ArticlProjects",
   "Mode": "Default",
@@ -2225,6 +2225,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\a8fb352c-06ec-4d60-983b-72a4d383343c-images (6).jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\images\\b01812f3-fff6-487c-b942-68c1ed85d6c5-images (1).jpeg",
+      "SourceId": "ArticlProjects",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\",
+      "BasePath": "_content/ArticlProjects",
+      "RelativePath": "images/b01812f3-fff6-487c-b942-68c1ed85d6c5-images (1).jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b01812f3-fff6-487c-b942-68c1ed85d6c5-images (1).jpeg"
     },
     {
       "Identity": "C:\\Users\\asd\\source\\repos\\ArticlProjects\\wwwroot\\images\\b949772c-bc62-4344-a840-808203bd0e70-WhatsApp Image 2023-07-09 at 07.13.39.jpg",
